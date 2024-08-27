@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encriptador de texto con opciones de encriptado y desencriptado en tiempo real.">
+    <meta name="keywords" content="encriptador, desencriptador, texto">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" aria-labelledby="title">
+        <div class="left-panel">
+            <h1 id="title">Encriptador de Texto</h1>
+            <textarea id="inputText" aria-label="Texto a encriptar o desencriptar" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="buttons">
+                <label>
+                    <input type="checkbox" id="lowercase" checked>
+                    Solo letras minúsculas y sin acentos
+                </label>
+                <button id="encryptButton">Encriptar</button>
+                <button id="decryptButton">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div id="resultMessage" aria-live="polite">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingrese el texto que deseas encriptar o desencriptar.</p>
+                <img id="illustration" src="illustration.svg" alt="Ilustración">
+            </div>
+            <textarea id="outputText" aria-label="Texto encriptado o desencriptado" readonly></textarea>
+            <button id="copyButton">Copiar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
